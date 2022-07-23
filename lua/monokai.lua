@@ -142,7 +142,7 @@ M.load_syntax = function(palette)
   return {
     Normal = {
       fg = palette.white,
-      bg = palette.base2,
+      bg = palette.black,
     },
     NormalFloat = {
       bg = palette.base1,
@@ -173,7 +173,7 @@ M.load_syntax = function(palette)
       bg = palette.base3,
     },
     CursorLine = {
-      bg = palette.base3,
+      bg = '#222526',
     },
     NonText = { -- used for "eol", "extends" and "precedes" in listchars
       fg = palette.base5,
@@ -186,11 +186,11 @@ M.load_syntax = function(palette)
     },
     Search = {
       fg = palette.base2,
-      bg = palette.yellow,
+      bg = palette.orange,
     },
     IncSearch = {
       fg = palette.base2,
-      bg = palette.orange,
+      bg = palette.yellow,
     },
     CursorLineNr = {
       fg = palette.orange,
@@ -223,11 +223,11 @@ M.load_syntax = function(palette)
     },
     LineNr = {
       fg = palette.base5,
-      bg = palette.base2,
+      bg = '#121414',
     },
     SignColumn = {
       fg = palette.white,
-      bg = palette.base2,
+      bg = '#121414',
     },
     StatusLine = {
       fg = palette.base7,
@@ -827,6 +827,9 @@ M.load_plugin_syntax = function(palette)
     },
     TelescopeMatching = {
       fg = palette.aqua,
+    },
+    illuminatedWord = {
+      bg = '#323638',
     },
 
     -- hrsh7th/nvim-cmp
